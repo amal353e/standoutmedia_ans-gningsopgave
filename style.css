@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "DM Serif Display", serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "DM Serif Display", serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+li,
+a {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.knap {
+  background-color: #000000;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.knap:hover {
+  scale: 90%;
+  transition: 0.3s;
+}
+
+.knap a {
+  font-weight: 600;
+}
+/* ------------------------- menu ---------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10%;
+  padding-block: 1%;
+}
+.logo img {
+  width: 90%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav li {
+  font-size: 15px;
+}
+
+header .knap {
+  margin-top: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ------------------------- herosektion ---------------------- */
+#herosektion {
+  background-image: url(billeder/topbillede.jpg);
+  padding-block: 200px;
+  padding-inline: 10%;
+}
+
+#herosektion h1,
+#herosektion p {
+  color: white;
+}
+
+#herosektion .knap {
+  background-color: white;
+}
+
+#herosektion .knap a {
+  color: black;
+}
+
+#herosektion p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* ------------------------- sektion 1 ---------------------- */
+#sektion1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #f8dd9f;
+  text-align: center;
+  padding-block: 160px;
+}
+
+#sektion1 h2 {
+  padding-bottom: 10px;
+}
+
+/* ------------------------- sektion 2 ---------------------- */
+#sektion2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-inline: 8%;
+  padding-block: 8%;
+}
+
+#sektion2 .column_h {
+  padding-left: 10%;
+}
+#sektion2 .column_v img {
+  scale: 100%;
+}
+
+/* ------------------------- sektion 3 ---------------------- */
+#sektion3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  text-decoration: none;
+}
+#sektion3 a {
+  font-size: 3rem;
+  font-family: "DM Serif Display", serif;
+}
+
+#sektion3 a:hover {
+  font-size: 2.7rem;
+  transition: 0.3s;
+}
+#sektion3 .column_1 {
+  background-image: url(billeder/ydelser.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 60%;
+}
+
+#sektion3 .column_2 {
+  background-image: url(billeder/service.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 60%;
+}
+
+#sektion3 .column_3 {
+  background-image: url(billeder/kontaktos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 60%;
+}
+/* ------------------------- sektion 4 ---------------------- */
+
+#sektion4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-inline: 8%;
+  padding-block: 8%;
+}
+
+#sektion4 .column_v {
+  padding-right: 10%;
+}
+
+/* ------------------------- bund ---------------------- */
+#bund {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f8dd9f;
+  align-items: center;
+  padding-inline: 8%;
+  padding-block: 8%;
+}
+#bund h2 {
+  font-size: 3.5rem;
+}
+
+#bund p {
+  font-size: 12px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+#bund .bold_p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formular input {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.formular #besked {
+  padding-bottom: 50px;
+}
+#bund .knap {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* ------------------------- footer ---------------------- */
+footer {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-inline: 10%;
+  padding-block: 5%;
+}
+
+footer p,
+footer li,
+footer h3 {
+  color: white;
+}
+
+footer li {
+  font-size: 12px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .tid {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.some {
+  display: flex;
+  align-items: center;
+}
+
+.some img {
+  width: 50%;
+}
+/* ------------------------- mobile view ------------------------ */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .knap a {
+    font-size: 12px;
+  }
+
+  .knap:hover {
+    scale: 90%;
+    transition: 0.3s;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 10px;
+  }
+
+  #herosektion {
+    padding-block: 100px;
+  }
+
+  #herosektion p {
+    font-size: 15px;
+  }
+  #sektion2,
+  #sektion3,
+  #sektion4,
+  #bund,
+  footer {
+    display: flex;
+    flex-flow: column;
+  }
+  #sektion1 {
+    padding-block: 100px;
+  }
+
+  #sektion2,
+  #sektion4 {
+    gap: 20px;
+  }
+  #sektion2 .column_v {
+    order: 1;
+  }
+
+  #sektion2 .column_h {
+    order: 0;
+    padding: 0;
+  }
+
+  #sektion3 .column_1,
+  #sektion3 .column_2,
+  #sektion3 .column_3 {
+    padding-block: 25%;
+  }
+  #sektion3 a {
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  #sektion3 a:hover {
+    font-size: 1.7rem;
+    transition: 0.3s;
+  }
+
+  #bund .column_h {
+    width: 350px;
+  }
+
+  footer {
+    text-align: center;
+    gap: 20px;
+  }
+
+  .some {
+    justify-content: center;
+  }
+}
